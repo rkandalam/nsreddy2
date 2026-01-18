@@ -1,1 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
 
+header {
+    background-color: #003087;
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: #0056d2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #003087;
+    transform: translateY(-2px);
+}
+
+nav a.active {
+    background-color: #003087;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #003087;
+    border-bottom: 2px solid #0056d2;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.75rem;
+}
+
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.profile-image {
+    max-width: 250px;
+    border-radius: 8px;
+    border: 3px solid #003087;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.profile-content {
+    flex: 1;
+}
+
+.project-item, .experience-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.project-item:hover, .experience-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #003087;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
