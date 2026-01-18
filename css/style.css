@@ -105,17 +105,22 @@ li {
 }
 
 .project-item, .experience-item {
-    margin-bottom: 1.5rem;
-    padding: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem;
     background: #f4f4f4;
-    border-radius: 5px;
+    border-radius: 1px;
     transition: box-shadow 0.3s ease;
 }
 
 .project-item:hover, .experience-item:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.contact-section .contact-icon {
+    width: 20px; /* Keeps icons small and professional */
+    height: 20px;
+    margin-right: 0.5rem;
+    vertical-align: middle; /* Aligns icon with text */
+}
 footer {
     background-color: #003087;
     color: #fff;
